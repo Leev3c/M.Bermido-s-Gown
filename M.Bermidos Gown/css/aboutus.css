@@ -1,0 +1,104 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: arial;
+	vertical-align: baseline;
+}
+
+a {
+	font-size: 20px;
+	color: #f00;
+	font-family: arial;
+}
+
+header{
+	z-index: 100;
+	background: rgb(0, 0, 0, 0.75);
+	overflow: auto;
+	position: absolute;
+	width: 100%;
+}
+
+
+.main-nav {
+	height: 155px;
+	width: 1080;
+	text-align: center;
+}
+.main-nav>ul{
+	display: block;
+	list-style: none;
+	height: 155px;
+	overflow: hidden;
+
+}
+
+.main-nav>ul>li{
+	display: inline-block;
+	margin-top: 4%;
+
+}
+.main-nav>ul>li>a{
+
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	margin-right: 40px;
+
+}
+.main-nav>ul>li>a:hover{
+	color:#2B94C4;
+}
+
+.content{
+	background: #fff url('img/slide4.jpg') top center;
+	width:100%;
+	height: 100%;
+	position: absolute;
+
+}
+
+
+
+h1{
+	background: rgb(0, 0, 0, 0.7);
+	font-family: inherit;
+	margin-top: 15%;
+	padding: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 15%;
+	text-align: center;
+	font-size: 30px;
+	line-height: 1.4;
+	letter-spacing: 3px;
+	color: #fff;
+	
+}
+
+.content2{
+	width:100%;
+	height: 100%;
+}
+
+.about-us a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #2B94C4;
+	transition: 0.25s;
+}
+
+.about-us a em{
+	font-size: 65px;
+	text-align: center;
+
+}
+
+.about-us a :hover {
+	color: #fff;
+
+}
