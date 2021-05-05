@@ -18,13 +18,13 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li>
-						<a href="#">Products</a>
+						<a href="products.html">Products</a>
 					</li>
 					<li>
 						<a href="#">Services</a>
 					</li>
 					<li>
-						<a href="#">About us</a>
+						<a href="aboutus.html">About us</a>
 					</li>
 					<li>
 						<a href="#">Sign-in</a>
@@ -46,21 +46,20 @@
 					
 						<tr>
 							
-							<th><a href="products.html">Item-1</a></th>
-							<th><a href="products.html">Item-2</a></th>
-							<th><a href="products.html">Item-3</a></th>
+							<th><a>Gowns for Rent</a></th>
+							
 							
 						</tr>
 	
 							<div class=table_banner_image>
 									<div class=image>
-								<img src="" alt="Item 1 Picture" width="500px" height="500px" >
+								<img src="css\img\gown1.jpg" alt="Item 1 Picture" width="500px" height="500px" >
 								</div>
 								<div class=image>
-								<img src="" alt="Item 2 Picture" width="500px" height="500px" >
+								<img src="css\img\gown2.jpg" alt="Item 2 Picture" width="500px" height="500px" >
 								</div>
 								<div class=image>
-								<img src="" alt="Item 3 Picture" width="500px" height="500px">
+								<img src="css\img\gown3.jpg" alt="Item 3 Picture" width="500px" height="500px">
 								</div>
 							</div>
 
