@@ -21,7 +21,7 @@
 						<a href="products.html">Products</a>
 					</li>
 					<li>
-						<a href="#">Services</a>
+						<a href="services.html">Services</a>
 					</li>
 					<li>
 						<a href="aboutus.html">About us</a>
