@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Homepage</title>
-	<link rel="stylesheet" href="css/index.css" />
+	<meta charset="utf-8">
+	<title>M.Bermido</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-	<div class="container">
-		<header>
-			<div class="logo">
-				<a href="https://www.facebook.com/gaming/darkuuuxd">
-				<!-- <img src="img/logo.jpg" width="350" height="155" ></a> -->
-				
-			</div>
+	<div class="header">
+		<div class="container">
 			<div class="main-nav">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a href="services.html">Services</a>
-					</li>
-					<li>
-						<a href="aboutus.html">About us</a>
-					</li>
-					<li>
-						<a href="sign-in.html">Sign-in</a>
-					</li>
-				</ul>
-			</div>
-		
-	
-		</header>
+				<div class="logo">
+					<img src="img/logo.png" width="175px">
+				</div>
+					<nav>
+						<ul>
+							<li><a href="index.php" class="active">Home</a></li>
+							<li><a href="products.php">Products</a></li>
+							<li><a href="services.php">Services</a></li>
+							<li><a href="aboutus.php">About Us</a></li>
+							<li><a href="account.php">Account</a></li>
+						</ul>
+					</nav>
 
-		<content>
-			<div class="content">
-				<div class="intro">M.Bermido's <br> Gown  <a href="https://www2.razer.com/ap-en/"></div>
+					<img src="images/cart.png" width="30px" height="30px">
+
+			</div>	
+
+			<div class="row">
+				<div class="col-2">		
+					<h1>High Quality & <br>Affordable Gowns</h1>
+					<p>Love love love love Love love love love Love love love love Love love love love</p>
+					<a href="products.php" class="btn">Rent Now &#8594 </a>
+				</div>
+				<div class="col-2">
+					<img src="img/col-2.png">
+					
+				</div>
 				
 			</div>
-			<div class="content2">
-				<div class="banner">
-					<div class="table_banner">
-					
-						<tr>
-							
-							<th><a>Gowns for Rent</a></th>
-							
-							
-						</tr>
-	
-							<div class=table_banner_image>
-									<div class=image>
-								<img src="css\img\gown1.jpg" alt="Item 1 Picture" width="500px" height="500px" >
-								</div>
-								<div class=image>
-								<img src="css\img\gown2.jpg" alt="Item 2 Picture" width="500px" height="500px" >
-								</div>
-								<div class=image>
-								<img src="css\img\gown3.jpg" alt="Item 3 Picture" width="500px" height="500px">
-								</div>
-							</div>
-
-					</div>
-				</div>
-			</div>
-		</content>
+		</div>
 	</div>
 
-	<div class="footer">
-		<h2 align="center"> <br>ALL RIGHTS RESERVE 2021 &copy;</h2>
+	<div class="featured">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<img src="img/ctg-1.png">
+				</div>
+				<div class="col-3">
+					<img src="img/ctg-2.png">
+				</div>
+				<div class="col-3">
+					<img src="img/ctg-3.png">
+				</div>
+				
+			</div>	
+		</div>	
+	</div>
+
+	<div class="small-container">
+		<h2 class="title" align="center">Featured Products</h2>	
+		<div class="row">
+			<div class="col-4">
+				<img src="img/ft-1.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/ft-2.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/ft-3.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/ft-4.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
 		</div>
-	
+		
+		<div class="small-container">
+		<h2 class="title" align="center">Latest</h2>	
+		<div class="row">
+			<div class="col-4">
+				<img src="img/latest-1.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/latest-2.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/latest-3.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+			<div class="col-4">
+				<img src="img/latest-4.png">
+				<h4>Red Coat</h4>
+				<p>P300.00</p>
+			</div>
+		</div>
+
+	</div>
+
+	</div>
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="img/ctg-1.png">
+				</div>
+				<div class="col-2">
+					<p>Exclusively Available on M.Bermido's</p>
+					<h1>New Design</h1>
+					<small>dskhsdoifhoifhofhlksnksjbdkjsbkjdsbcdkjbcjdbckjxbckcbn  skadgdeodheidheds sjksdalaskjdnlbkdbsa skbdgdihskgdsguisdgus askdhidhi</small>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-1">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="col-2">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021-Powerpuff Girls</p>
+		</div>
+	</div>
 </body>
 </html>

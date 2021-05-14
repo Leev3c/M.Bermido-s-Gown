@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Services</title>
-	<link rel="stylesheet" type="text/css" href="css/products.css">
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="css/account.css">
 </head>
 <body>
 	<div class="header">
@@ -17,8 +18,8 @@
 							<li><a href="index.php">Home</a></li>
 							<li><a href="products.php">Products</a></li>
 							<li><a href="services.php">Services</a></li>
-							<li><a href="aboutus.php" class="active">About Us</a></li>
-							<li><a href="account.php">Account</a></li>
+							<li><a href="aboutus.php">About Us</a></li>
+							<li><a href="account.php" classACTIVE>Account</a></li>
 						</ul>
 					</nav>
 
@@ -28,6 +29,7 @@
 		</div>
 		
 	</div>
+	
 	<div class="footer">
 		<div class="container">
 			<div class="row">

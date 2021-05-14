@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Products</title>
-	<link rel="stylesheet" href="css/products.css" />
+	<link rel="stylesheet" type="text/css" href="css/products.css">
 </head>
 <body>
-	<header>
-				
-			</div>
-		<div class="main-nav">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a href="services.html">Services</a>
-					</li>
-					<li>
-						<a href="aboutus.html">About us</a>
-					</li>
-					<li>
-						<a href="sign-in.html">Sign-in</a>
-					</li>
-				</ul>
-			</div>
-	</header>
+	<div class="header">
+		<div class="container">
+			<div class="main-nav">
+				<div class="logo">
+					<img src="img/logo.png" width="175px">
+				</div>
+					<nav>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="products.php" class="active">Products</a></li>
+							<li><a href="services.php">Services</a></li>
+							<li><a href="aboutus.php">About Us</a></li>
+							<li><a href="account.php">Account</a></li>
+						</ul>
+					</nav>
 
-	<content>
-		
-	</content>
-		
+					<img src="images/cart.png" width="30px" height="30px">
 
+			</div>	
+		</div>
+		
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

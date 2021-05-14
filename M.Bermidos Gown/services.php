@@ -1,85 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Services</title>
-	<link rel="stylesheet" href="css/services.css" />
+	<link rel="stylesheet" type="text/css" href="css/products.css">
 </head>
 <body>
-	<header>
-		
-				
-			</div>
-		<div class="main-nav">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<li>
-						<a href="services.html">Services</a>
-					</li>
-					<li>
-						<a href="aboutus.html">About us</a>
-					</li>
-					<li>
-						<a href="sign-in.html">Sign-in</a>
-					</li>
-				</ul>
+	<div class="header">
+		<div class="container">
+			<div class="main-nav">
+				<div class="logo">
+					<img src="img/logo.png" width="175px">
+				</div>
+					<nav>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="products.php">Products</a></li>
+							<li><a href="services.php" class="active">Services</a></li>
+							<li><a href="aboutus.php">About Us</a></li>
+							<li><a href="account.php">Account</a></li>
+						</ul>
+					</nav>
+
+					<img src="images/cart.png" width="30px" height="30px">
+
+			</div>	
 		</div>
-	</header>
-
-	<content>
-		<div class="content">
-			<div class="services_intro">
-			<h1>Services offered</h1>
-				
-				<p>*FILL THIS SECTION WITH SERVICES*<em></em></p></div>
-
-		<!-- <table>
-			
-			<tr>
-				<td>
-
-					<h2>Razer Gold Pins</h2>
-					<p>Use Razer Gold in over 2,500 games and entertainment apps to purchase in-game items and unlock exclusive content.</p>
+		
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h3>Useful Links</h3>
 					<ul>
-						<br>
-						<li>Gold Pins</li>
-						<li>MU origin Pins</li>
-						<li>World of Dragon Nest</li>
-						<li>And more!</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
 					</ul>
-				</td>
-				<td>
-
-					<h2>Bills payment</h2>
-					<p>Skip long lines and pay bills anytime, anywhere with our services offered!</p>
+				</div>
+				<div class="col-4">
+					<h3>Follow Us</h3>
 					<ul>
-						<br>
-						<li>Electric utilities</li>
-						<li>Water utilities</li>
-						<li>Cable/Internet</li>
-						<li>And more!</li>
+						<li>Facebook</li>
+						<li>Instagram</li>
 					</ul>
-				</td>
-				
-				<td>
-					<h2>Game Credits</h2>
-					<p>Certified online credit seller! Buy games and even in-game contents and more!</p>
-					<ul>
-						<br>
-						<li>Steam Wallet Credits</li>
-						<li>Garena Shells</li>
-						<li>Google Playstore Credits</li>
-						<li>And more!</li>
-					</ul>
-				</td>
-			</tr>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		</table> -->
-</div>
-	</content>
 </body>
 </html>
