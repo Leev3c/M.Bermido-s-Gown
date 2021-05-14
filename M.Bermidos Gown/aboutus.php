@@ -18,7 +18,7 @@
 							<li><a href="products.php">Products</a></li>
 							<li><a href="services.php">Services</a></li>
 							<li><a href="aboutus.php" class="active">About Us</a></li>
-							<li><a href="account.php">Account</a></li>
+							<li><a href="login.php">Account</a></li>
 						</ul>
 					</nav>
 
