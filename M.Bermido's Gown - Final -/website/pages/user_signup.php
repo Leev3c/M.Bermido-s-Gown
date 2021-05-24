@@ -1,0 +1,228 @@
+<?php
+    session_start();
+    include('../config/dbconn.php');
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>M. Bermido's</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+</head>
+
+<body class="login-page sidebar-collapse">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-transparent " color-on-scroll="50">
+        <div class="container">
+            <div class="navbar-translate">
+                <a href="../index.php" class="navbar-brand" rel="tooltip"  data-placement="bottom" style="color: #000000">
+                    M.Bermido's Gown
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="../assets/img/blurred-image-1.jpg">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/mbermido" target="_blank">
+                            <i class="fa fa-facebook-square" style="color: #000000"></i>
+                            <p style="color: #000000">Facebook</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+<?php
+// including the database connection file
+include("../config/dbconn.php");
+if(isset($_POST['submit']))
+{   
+    $firstname=$_POST['firstname'];
+    $middlename=$_POST['middlename'];
+    $lastname=$_POST['lastname'];
+    $address=$_POST['address'];
+    $email=$_POST['email'];
+    $contact=$_POST['contact'];
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+
+    $pass1=($password);
+
+    // checking empty fields
+    if(empty($firstname) || empty($middlename) || empty($lastname) || empty($address) || empty($email) || empty($contact) || empty($username) || empty($password)) {    
+            
+        if(empty($firstname)) {
+            echo "<font color='red'>Firstname field is empty!</font><br/>";
+        }
+
+        if(empty($middlename)) {
+            echo "<font color='red'>Middlename field is empty!</font><br/>";
+        }
+        
+        if(empty($lastname)) {
+            echo "<font color='red'>Lastname field is empty!</font><br/>";
+        }
+
+        if(empty($address)) {
+            echo "<font color='red'>Address field is empty!</font><br/>";
+        }
+
+        if(empty($email)) {
+            echo "<font color='red'>Email field is empty!</font><br/>";
+        }
+
+        if(empty($contact)) {
+            echo "<font color='red'>Contact field is empty!</font><br/>";
+        }
+        
+        if(empty($username)) {
+            echo "<font color='red'>Username field is empty!</font><br/>";
+        }    
+
+        if(empty($password)) {
+            echo "<font color='red'>Password field is empty!</font><br/>";
+        }    
+    } else {    
+        //updating the table
+        $query = "INSERT INTO users (firstname, middlename, lastname, address, email, contact, username, password) 
+                VALUES ('$firstname','$middlename','$lastname','$address','$email','$contact','$username','$pass1')";
+
+        $result = mysqli_query($dbconn,$query);
+        
+        if($result){
+            //redirecting to the display page. In our case, it is index.php
+        header("Location: ../index.php");
+        }
+        
+    }
+}
+?>
+
+
+
+    <div class="page-header clear-filter" filter-color="white">
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                    <form class="form" method="post" action="">
+                        <div class="card mt-5 bg-dark btn-round">
+                            <div class="input-group form-group-no-border input-lg" style="color:#000000">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input type="text" name="firstname" class="form-control" placeholder="First name" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input type="text" name="middlename" class="form-control" placeholder="Middle name" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                <input type="text" name="lastname" class="form-control" placeholder="Last name" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_email-85"></i>
+                                </span>
+                                <input type="text" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons business_bank"></i>
+                                </span>
+                                <input type="text" name="address" class="form-control" placeholder="Complete address" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons tech_mobile"></i>
+                                </span>
+                                <input type="text" name="contact" class="form-control" placeholder="Contact info" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                </span>
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                                </span>
+                                <input type="password" id="password" name="password" placeholder="Password" class="form-control"  required>
+                            </div>
+                             <div class="footer text-center">
+                            <button type="submit" class="bbtn btn-light btn-round btn-lg btn-block" id="submit" name="submit">
+                                 Create account
+                            <span class="glyphicon glyphicon-floppy-save"></span>
+                            </button>
+                        </div>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="footer" data-background-color="black">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="" target="_blank">
+                                INTERNET TECHNOLOGIES
+                            </a>
+                        </li>
+                        <li>
+                            IT Elective 3  
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>, BSIT-3C, Powerpuff Girls
+                </div>    
+            </div>
+        </footer>
+    </div>
+       
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="../assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+
+</html>
